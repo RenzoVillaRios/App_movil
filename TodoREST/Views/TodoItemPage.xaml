@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="TodoREST.TodoItemPage" 
+			 Title="Todo">
+	<StackLayout Margin="20">
+        <Label Text="Nombre y Apellido" />
+        <Entry Text="{Binding Path=nombreApp}" 
+               Placeholder="Renzo " />
+        <Label Text="Nombre y Apellido" />
+        <Entry Text="{Binding Path=apellido}" 
+               Placeholder="Villa Rios" />
+		<Label Text="Sexo" />
+        <Entry Text="{Binding Path=sexo}"
+               Placeholder="M/F" />
+		<Label Text="Fecha de nacimiento" />
+        <Entry Text="{Binding Path=edad}"
+               Placeholder="9999-00-00" />
+        <Button Text="Save" 
+                Clicked="OnSaveButtonClicked" />
+		<Button Text="Delete"
+                Clicked="OnDeleteButtonClicked" />
+		<Button Text="Cancel" 
+                Clicked="OnCancelButtonClicked" />
+	</StackLayout>
+</ContentPage>
